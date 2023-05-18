@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input Form test</title>
+</head>
+<body>
+
+  <h1> Popular Websites related to HTML and World Wide Web </h1>
+    <h3> HTML</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com"> W3Schools</a></li>
+        <li><a href="https://htmldog.com"> HTML5 Dog</a></li>
+        <li><a href="https://html5test.com">HTML5 Test</a></li>
+    </ul>
+    <h3> Tim Berners Lee</h3>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners Lee – Wikipedia</a></li>
+        <li><a href="https://www.w3.org/People/Berners-Lee">Tim Berners Lee – Official Biography</a></li>
+        <li><a href="https://www.ted.com/speakers/tim_berners_lee">Tim Berners Lee – Ted Talk</a></li>
+    </ul>
+    <h3> Browser Stats 2018</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/browsers">Browser Stats – W3Schools</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Browser_wars">Wikipedia.org – The Browser Wars</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Gh6N1uPjGno">The True Story of the Internet Browser Wars (You
+                Tube)</a></li>
+    </ul>
+    <h2>
+        <i>Future directions for the World Wide Web</i>
+    </h2>
+    <p>Having summarized the origins of the Web, and its current state, we now look at some possible
+        directions in which developments could take it in the coming years. One can separate these into three
+        long term goals. The first involves the improvement of the infrastructure, to provide a more functional,
+        robust, efficient and available service. The second is to enhance the web as a means of
+        communication and interaction between people. The third is to allow the web, apart from being a
+        space browseable by humans, to contain rich data in a form understandable by machines.</p>
+    <h3> Infrastructure </h3>
+    <p>When the web was designed, the fact that anyone could start a server, and it could run happily on the
+        Internet without regard to registration with any central authority or with the number of other HTTP
+        servers which others might be running was seen as a key property, which enabled it to "scale". Today,
+        such scaling is not enough. The numbers of clients is so great that the need is for a server to be able
+        to operate more or less independently of the number of clients.</p>
+    <p>Another cause for evolution is the fact that business is now relying on the Web to the extent that
+        outages of servers or network are not considered acceptable. One would prefer an adaptive system
+        which would configure itself so as to best use the resources available to the various communities to
+        optimize the quality of service perceived. This is not a simple problem.</p>
+    <p>It includes the problems of:</p>
+    <Ol type=i>
+        <li>categorizing documents and users so as to be able to treat them in groups;</li>
+        <li>anticipating high usage of groups of documents by groups of users;</li>
+        <li>deciding on optimal placement of copies of data for rapid access;</li>
+        <li>an algorithm for finding the cheapest or nearest copy, given a URL;</li>
+        <li>Resolution of these problems must occur within a context in which different areas of the infrastructure
+            are funded through different bodies with different priorities and policies.</li>
+    </Ol>
+    <p>
+        <i>These are some of the long term concerns about the infrastructure, the basic architecture of the web. In the
+            shorter term, protocol designers are increasing the efficiency of HTTP communication, particularly for the
+            case of a user
+            whose performance limiting item is a telephone modem.</i>
+    </p>
+
+    <form>
+        First Name: <br>
+        <input type="text" name="first name"><br>
+        Last Name: <br>
+        <input type="text" name="last name"><br>
+        Email Address: <br>
+        <input type="email" name="email"><br><br>
+
+        Date of Birth: <input type="date" name="date of birth"><br><br>
+		
+		<!-- Fieldset tag will create border - note closing tag after months -->
+        <fieldset style="width: 475px">
+		
+			<!-- Legend tag will create text inset into fieldset border -->
+			<legend>Credit Card Details</legend>
+			
+            <input type="radio" name="cardType">
+            <img src="img/visa.png" alt="Visa card" title="Visa card" width="30"><br>
+
+            <input type="radio" name="cardType">
+            <img src="img/visaDebit.png" alt="Visa debit" title="Visa debit" width="30"><br>
+
+            <input type="radio" name="cardType">
+            <img src="img/masterCard.png" alt="Master card" title="Master card" width="30"><br>
+
+            <input type="radio" name="cardType">
+            <img src="img/amEx.jpg" alt="American express" title="American express" width="30"><br>
+
+            <input type="number" name="creditCardNumber"> Credit Card Number<br>
+
+            Expiry Year:
+            <select name="expiryYear">
+                <option value="2019" selected>2019</option>
+				<option value="2020" >2020</option>
+                <option value="2021" >2021</option>
+                <option value="2022" >2022</option>
+                <option value="2023" >2023</option>
+                <option value="2024" >2024</option>
+            </select>
+            <br>
+
+            Expiry Month:
+            <select name="expiryMonth">
+                <option value="January" >January</option>
+                <option value="February" >February</option>
+                <option value="March" >March</option>
+                <option value="April" >April</option>
+                <option value="May" >May</option>
+                <option value="June" >June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+
+        </fieldset>
+		<br>
+
+        Additional Notes: <br>
+		<!-- Text input box  - View these on page and test out data input -->
+        <textarea name="additional naotes" cols="60" rows="5" placeholder="Enter additonal information here..."></textarea>
+        <br style="margin-bottom: 20px">
+		
+		<!-- Text input box without placeholder attribute - View these on page and test out data input -->
+        <textarea name="additional naotes" cols="60" rows="5">Enter additional information here...</textarea>
+        <br style="margin-bottom: 20px">
+
+        <input type="submit" value="Submit Card Details">
+
+    </form>
+    
+</body>
+</html>

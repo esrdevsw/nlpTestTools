@@ -19,20 +19,20 @@ public class Runner {
 		
 		System.out.println();
 		
-		//Cleacleaningtext(text);
+		
 		ct.cleaningtext(text);
 		
 		System.out.println();
 		
-		//cleaningtextGuava(text);
+		
 		ct.cleaningtextGuava(text);
 		
 		System.out.println();
 		
-		//cleaningtextGuavaCharMatcher(text);
+		
 		ct.cleaningtextGuavaCharMatcher(text);
 		
-		//charMatcherRetention();
+		
 		ct.charMatcherRetention();
 		
 	}
